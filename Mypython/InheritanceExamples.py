@@ -27,7 +27,7 @@
 
 # ####################################################################################################
 # # This example demonstrates both Is-A and Has-A relationship
-# class Car:+
+# class Car:
 #     def __init__(self, name, model, colour):
 #         self.name = name
 #         self.model = model
@@ -45,9 +45,9 @@
 #     def eat_n_drink(self):
 #         print("Eat buryani and drink beer")
 #
-# class Employee(Person):
+# class Employee(Person): #Employee is a person, employee has a car
 #     def __init__(self,name, age, eId, esal, ecar):
-#         super().__init__(name, age) #When an Employee object is created, the name and age will be initialized by the parent class. The eId and esal will be
+#         super().__init__(name, age) #When an Employee object is created, the name and age will be initialized by the parent class. The eId and esal will be initialized by the child class
 #         self.eId = eId
 #         self.esal = esal
 #         self.ecar = ecar

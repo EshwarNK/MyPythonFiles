@@ -10,7 +10,7 @@
 # hello.__c #You cannot access c since it is private
 
 # ###############################################################################
-
+#
 # class Car:
 #     '''Example 2'''
 #     def __init__(self, speed, colour):
@@ -26,13 +26,17 @@
 #         return self.colour
 # ford = Car(100, "blue")
 # ford.set_speed(200)
+# # print(ford.get_speed())
 # ford.__speed = 300 ## This will not work since the speed variable is private and and can be changed only using setters
+# # print(ford.get_speed())
 # ford.colour = "silver" #This will work since the colour is not private. Even by using setters also we can change the value of this variable.
+# # print(ford.colour)
 # ford.set_colour("Purple")
 # print(ford.get_speed())
 # print(ford.colour)
 # print(ford.get_colour())
 # print(ford.__speed)
+# # print(ford.get_speed())
 
 
 ###############################################################################

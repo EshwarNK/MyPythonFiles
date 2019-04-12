@@ -10,7 +10,7 @@ class Square(Shape):
     def __init__(self, side):
         self.__side = side
 
-shape = Shape() #If we dont want wo instantiate our class like this, we use abstract method. Now this will
+shape = Shape() #If we dont want to instantiate our class like this, we use abstract method. Now this will
 # not work since the Shape is and abstract class. We have declared it as Shape(ABC)
 square = Square(5)  # This will also not work since Square has inherited Shape which is abstract class
 # To make use of the area and the perimeter methods, we have to implement them in the base class only.

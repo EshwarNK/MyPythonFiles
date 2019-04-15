@@ -25,3 +25,12 @@ class queue2stacks:
                 self.outstack.append(self.instack.pop())  #5,4,3,2,1
 
         return self.outstack.pop()      #1,2,3,4,5  So, pop is happeing like FIFO  #First out is also 5
+
+#Verification of the implementation
+q = queue2stacks()
+
+for i in range(5):
+    q.enque(i)          # 0,1,2,3,4
+
+for i in range(5):
+    print(q.deque())    # 0,1,2,3,4

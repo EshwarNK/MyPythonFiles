@@ -17,7 +17,8 @@ def word_split(phrase, list_of_words, output=None):
     for word in list_of_words:
 
         # If the current phrase begins with the word, we have a split point!
-        if phrase.startswith(word):
+        # if phrase.startswith(word):
+        if word in phrase[:len(word)]:
             # Add the word to the output
             output.append(word)
 

@@ -1,4 +1,5 @@
 '''Write a function to reverse a linked list'''
+#Doubt
 def reverse(head):
     current = head
     previous = None

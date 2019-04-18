@@ -1,4 +1,5 @@
 '''To write a function that takes a head node and an integer value n and then returns the nth to the last node in the linked list'''
+#Doubt
 def nth_to_lst_node(n, head):
     left_pointer = head
     right_pointer = head

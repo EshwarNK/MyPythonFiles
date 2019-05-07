@@ -1,4 +1,5 @@
 '''Implementation of selection sort'''
+#Most easiest way
 def selection_sort1(arr):
     for i in range(len(arr)):
         minpos = i
@@ -8,6 +9,16 @@ def selection_sort1(arr):
         (arr[minpos], arr[i]) = (arr[i], arr[minpos])
     return arr
 print(selection_sort1([5,3,7,2]))
+
+def selection_sort(arr):
+    for i in range(len(arr)):
+        minpos = i
+        for j in range(i, len(arr)):
+            if arr[j]<arr[minpos]:
+                minpos = j
+        arr[minpos], arr[i] = arr[i], arr[minpos]
+    return arr
+print(selection_sort([3,2,4,1,5]))
 
 
 def selection_sort2(arr):

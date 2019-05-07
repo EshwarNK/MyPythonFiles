@@ -19,14 +19,20 @@
 # search([2,6,6,4],6)
 
 #'''Sorted case: Bunary search'''
-def bsearch(seq, v, l, r):
-    if (r-l)==0:
-        return False
-    mid = (r+l)//2          #integer devision
-    if (v == seq[mid]):
-        return True
-    if (v < seq[mid]):
-        return (bsearch(seq, v, l, mid))
-    else:
-        return (bsearch(seq, v, mid+1, r))
-print(bsearch([1,2,3,4,5], 4, 1,5))
+# def bsearch(seq, v, l, r):
+#     if (r-l)==0:
+#         return False
+#     mid = (r+l)//2          #integer devision
+#     if (v == seq[mid]):
+#         return True
+#     if (v < seq[mid]):
+#         return (bsearch(seq, v, l, mid))
+#     else:
+#         return (bsearch(seq, v, mid+1, r))
+# print(bsearch([1,2,3,4,5], 4, 1,5))
+
+def bubblesort(arr):
+    for i in range(len(arr)):
+        for j in range(len(arr)):
+            if arr[j]>arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1]

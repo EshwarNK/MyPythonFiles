@@ -12,8 +12,8 @@ def MergeSort(arr):
         j = 0       # tracker for the right half
         k = 0       # tracker for the final array
 
-        while i<len(lefthalf) and j<len(righthalf):
-
+        while i<len(lefthalf) and j<len(righthalf):     # When the lenght of the arr is 2, the further division will stop.
+                                                        # Then, swapping and creation of the sorted array will start.
             if lefthalf[i] < righthalf[j]:      #compare each element of left half with that of the righthalf and append the smaller element first to the final array
                 arr[k] = lefthalf[i]
                 i+=1

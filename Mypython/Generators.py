@@ -18,7 +18,7 @@ import time
 names = ['sunny', 'bunny', 'kunny']
 subjects = ['Python', "java", 'javascript']
 def people_list(num):
-    results = []
+    results = []            # Here, we are storing the data in the results, and lets say the num=10000, then it will take very huge memory to store such big data
     for i in range(num):
         person = {
             'id': i,
@@ -26,12 +26,13 @@ def people_list(num):
             'subject':random.choice(subjects)
         }
         results.append(person)
-    return results
+    return
 
 t1 = time.process_time()
-people = people_list(100000)
+people = people_list(10000000)
 t2 = time.process_time()
 print('Time taken for list:', t2-t1)
+# print(people)
 
 '''Case-2: With using generators'''         # Very less time taken
 import random
@@ -43,12 +44,17 @@ def people_generator(num):
         person = {
             'id': i,
             'name': random.choice(names),
-            'subject':random.choice(subjects)
-        }
-        yield person
+            'subject':random.choice(subjects)           # Here, for each value of i, it creates a person and throws it back to the output immediately and erases the person content
+        }                                               # So, it does not store anything
+        yield person            # Here we are not storing the data in any variable. We fetch the data at run time whenever it is needed without allocating any memory
 
 t1 = time.process_time()
-people = people_generator(100000)
+people = people_generator(10000000)
 t2 = time.process_time()
 print('Time taken for generators:', t2-t1)
+# for i in range(10):
+#     print(people.__next__())
+
+
+
 

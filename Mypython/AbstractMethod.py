@@ -17,7 +17,7 @@ square = Square(5)  # This will also not work since Square has inherited Shape w
 '''
 
 # ###############################################################################################
-#
+
 # from abc import ABC, abstractmethod  #ABC-Abstract Base Class
 # class Shape(ABC):
 #     @abstractmethod
@@ -42,14 +42,14 @@ square = Square(5)  # This will also not work since Square has inherited Shape w
 
 ###############################################################################################
 
-from abc import ABC, abstractmethod  #ABC-Abstract Base Class
-class MyInterface(ABC):
-    @abstractmethod
-    def fun1(self):
-        print("Hi")
-class MyClass(MyInterface):
-    pass   #This will not work. We need to implement fun1 in sub class also
-    def fun1(self):
-        print("Hello")
-m1 = MyClass()
-m1.fun1()
+# from abc import ABC, abstractmethod  #ABC-Abstract Base Class
+# class MyInterface(ABC):
+#     @abstractmethod
+#     def fun1(self):
+#         print("Hi")
+# class MyClass(MyInterface):
+#     pass   #This will not work. We need to implement fun1 in sub class also
+#     def fun1(self):
+#         print("Hello")
+# m1 = MyClass()
+# m1.fun1()

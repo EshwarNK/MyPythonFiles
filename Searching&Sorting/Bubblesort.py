@@ -23,7 +23,7 @@
 # Simple and most easiest way
 def bubblesort(arr):
     for i in range(len(arr)-1):     # len(arr)-1 used because we should not get index out of bound exception when the element reaches last element
-        for j in range(len(arr)-1): # len(arr)-1 used because we should not get index out of bound exception when the element reaches last element since we compare with next index element
+        for j in range(len(arr)-i-1): # len(arr)-1 used because we should not get index out of bound exception when the element reaches last element since we compare with next index element
             if arr[j]>arr[j+1]:
                 arr[j], arr[j+1] = arr[j+1], arr[j]
     return arr

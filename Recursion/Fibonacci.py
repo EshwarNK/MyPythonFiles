@@ -6,6 +6,7 @@ def fib_rec(n):
 print(fib_rec(2))
 print(fib_rec(3))
 print(fib_rec(4))
+print(fib_rec(5))
 print(fib_rec(10))
 
 '''Fibonacci sequence using Dynamic programming (Memoization)'''

@@ -32,7 +32,9 @@
 # print(bsearch([1,2,3,4,5], 4, 1,5))
 
 def bubblesort(arr):
-    for i in range(len(arr)):
-        for j in range(len(arr)):
+    for i in range(len(arr)-1):
+        for j in range(len(arr)-1):
             if arr[j]>arr[j+1]:
-                arr[j], arr[j+1] = arr[j+1]
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+    return arr
+print(bubblesort([2,6,6,4]))

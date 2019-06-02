@@ -3,7 +3,7 @@ class Stack:
     def __init__(self):
         self.items = []
     def isEmpty(self):
-        return self.items == []
+        return len(self.items) == []
     def pop(self):
         return self.items.pop()
     def push(self, item):

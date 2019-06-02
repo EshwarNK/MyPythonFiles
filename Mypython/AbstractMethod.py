@@ -18,26 +18,26 @@ square = Square(5)  # This will also not work since Square has inherited Shape w
 
 # ###############################################################################################
 
-# from abc import ABC, abstractmethod  #ABC-Abstract Base Class
-# class Shape(ABC):
-#     @abstractmethod
-#     def area(self, side):
-#         self.side = side
-#         return self.side * self.side
-#
-#     def perimeter(self, side):
-#         self.side = side
-#         return self.side * 4
-#
-#
-# class Square(Shape):
-#     def __init__(self, side):
-#         self.__side = side
-#     def area(self):
-#         return self.__side * self.__side  # Since the area is @abstractmethod, we have to access it by implementing it in the base class
-# square = Square(5)
-# print(square.perimeter(5))  # Since the perimeter is not @abstractmethod, we can access it directly like this
-# print(square.area())
+from abc import ABC, abstractmethod  #ABC-Abstract Base Class
+class Shape(ABC):
+    @abstractmethod
+    def area(self, side):
+        self.side = side
+        return self.side * self.side
+
+    def perimeter(self, side):
+        self.side = side
+        return self.side * 4
+
+
+class Square(Shape):
+    def __init__(self, side):
+        self.__side = side
+    def area(self):
+        return self.side * self.side  # Since the area is @abstractmethod, we have to access it by implementing it in the base class
+square = Square(5)
+print(square.perimeter(5))  # Since the perimeter is not @abstractmethod, we can access it directly like this
+print(square.area())
 
 
 ###############################################################################################

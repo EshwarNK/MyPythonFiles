@@ -53,3 +53,7 @@ def rev_word3(s):
 
     # Join the reversed words
     return " ".join(reversed(words))
+
+def rev_string(string):
+    print(" ".join(string.split()[::-1]))
+rev_string("Did you have tea today")

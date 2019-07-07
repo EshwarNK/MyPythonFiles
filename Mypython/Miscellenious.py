@@ -33,3 +33,20 @@ elst = {elem1:elem2 for elem1, elem2 in zip(alst,blst)}
 print(elst)
 elst2 = dict(zip(alst,blst))
 print(elst2)
+
+
+def trycheck():
+    try:
+        1/0
+        #return 2
+    except:
+        print("Cant divide by zero")
+        return 0
+    finally:
+        print("Can't divide by zero")
+        return 1
+print(trycheck())
+# when there is an exception in try, the print statements present in except block will be executed first and then those present in the finally block will be executed.
+# When it comes to return statements, only one return statement, will be executed in the entire try-except-finally.
+# Highest priority will be given to the return statement present in finally block
+# You'll notice that python always returns the last thing to be returned and the return statement will be executed in the end

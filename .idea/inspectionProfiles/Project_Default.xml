@@ -5,6 +5,7 @@
       <option name="ignoredIdentifiers">
         <list>
           <option value="list.replace" />
+          <option value="Mypython.Decorators.checkZero" />
         </list>
       </option>
     </inspection_tool>

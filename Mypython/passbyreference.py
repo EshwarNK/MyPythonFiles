@@ -8,3 +8,7 @@ def hello(x):
     return
 hello(a)
 print(a)
+
+
+#Call by reference: We have a variable, if we make any changes to that variable inside the function, then these changes
+# will be affected to the variable even outside the function

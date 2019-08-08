@@ -1,16 +1,4 @@
 import mysql.connector
-#
-# mydb = mysql.connector.connect(
-  # host="cisco.com",
-  # user="eskumar",
-  # passwd="123456789"
-# )
-#
-# mycursor = mydb.cursor()
-#
-# mycursor.execute("CREATE DATABASE mydatabase")
-#
-# import mysql.connector
 
 mydb = mysql.connector.connect(
   host="abcd.com",

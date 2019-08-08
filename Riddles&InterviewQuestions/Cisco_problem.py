@@ -13,9 +13,9 @@ import mysql.connector
 # import mysql.connector
 
 mydb = mysql.connector.connect(
-  host="cisco.com",
-  user="eskumar",
-  passwd="Mar27ch$1995",
+  host="abcd.com",
+  user="eshwar",
+  passwd="abcdzyx",
   database="mydatabase"
 )
 
